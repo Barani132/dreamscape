@@ -1,0 +1,30 @@
+
+.App { min-height: 100vh; position: relative; }
+
+.constellation-line {
+  stroke: rgba(230, 230, 250, 0.35);
+  stroke-width: 0.15;
+  animation: pulseLine 4s ease-in-out infinite;
+}
+
+@keyframes pulseLine {
+  0% {
+    opacity: 0.2;
+    stroke-width: 0.12;
+  }
+
+  50% {
+    opacity: 0.8;
+    stroke-width: 0.22;
+  }
+
+  100% {
+    opacity: 0.2;
+    stroke-width: 0.12;
+  }
+}
+
+.travel-dot {
+  fill: #ffd1dc;
+  filter: drop-shadow(0 0 10px #ffd1dc);
+}
